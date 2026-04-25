@@ -1,113 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BRIDGE Research & Innovation - Parliaments. Peace. Policy</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <img src="your-logo.png" alt="BRIDGE Logo">
-        <div>
-          <span class="logo-text">BRIDGE</span>
-          <span class="tagline">Research & Innovation</span>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Logo + About -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="your-logo.png" alt="BRIDGE Logo">
+            <span class="logo-text">BRIDGE</span>
+          </div>
+          <p class="footer-desc">
+            Research and Innovation for Democratic Governance and Enhanced Peace.<br>
+            A non-profit think tank and Parliamentary Monitoring Organization based in Addis Ababa, Ethiopia.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
         </div>
-      </div>
 
-      <ul class="nav-menu">
-        <li><a href="#" class="active">Home</a></li>
-        <li class="dropdown">
-          <a href="#">About <span class="arrow">▼</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Our Mission</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Partners</a></li>
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Parliamentary Research</a></li>
+            <li><a href="#">IGAD Knowledge & Research</a></li>
+            <li><a href="#">Training Programs</a></li>
           </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Parliamentary Research <span class="arrow">▼</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Ethiopian Parliament Monitoring</a></li>
-            <li><a href="#">IGAD Parliaments</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Publications <span class="arrow">▼</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Monthly Digest</a></li>
+        </div>
+
+        <!-- Column 3: Publications -->
+        <div class="footer-col">
+          <h4>Publications</h4>
+          <ul>
+            <li><a href="#">Monthly Digest (English)</a></li>
+            <li><a href="#">Monthly Digest (Amharic)</a></li>
             <li><a href="#">Occasional Papers</a></li>
-            <li><a href="#">IGAD Digest</a></li>
-            <li><a href="#">Quarterly Reports</a></li>
+            <li><a href="#">IGAD Parliamentary Digest</a></li>
+            <li><a href="#">Annual Reports</a></li>
           </ul>
-        </li>
-        <li><a href="#">Training Programs</a></li>
-        <li><a href="#">COP32</a></li>
-        <li><a href="#">News & Events</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-      <div class="nav-actions">
-        <button class="btn-primary">Subscribe</button>
-        <a href="#" class="lang-switch">አማርኛ</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Research and Innovation for<br><span>Democratic Governance</span> and Enhanced Peace</h1>
-      <p class="subtitle">A non-profit think tank and Parliamentary Monitoring Organization specializing in parliamentary affairs and IGAD.</p>
-      <div class="hero-buttons">
-        <a href="#" class="btn-primary">Explore Publications</a>
-        <a href="#" class="btn-secondary">Learn About Us</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- About Brief -->
-  <section class="about-brief">
-    <div class="container">
-      <div class="about-box">
-        <p>We are a non-profit think tank and Parliamentary Monitoring Organization specializing in parliamentary affairs and the sub-regional organization of the Intergovernmental Authority on Development (IGAD). Established in December 2024 in Addis Ababa, Ethiopia.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Latest Posts / Publications Section (New) -->
-  <section class="latest-posts">
-    <div class="container">
-      <h2>Latest Publications & Digests</h2>
-      <div class="posts-grid">
-        <!-- Repeat this card structure for your latest items -->
-        <div class="post-card">
-          <div class="card-image">
-            <img src="digest-image.jpg" alt="Monthly Digest">
-          </div>
-          <div class="card-content">
-            <span class="category">Monthly Digest • English</span>
-            <h3>Monthly Digest Vol.2 No. 014 – March/April 2026</h3>
-            <p>Responsibilities of the Ethiopian House of Peoples’ Representatives...</p>
-            <a href="#" class="read-more">Read →</a>
-          </div>
         </div>
 
-        <!-- Add more cards here (Amharic, Occasional Papers, IGAD Digest, etc.) -->
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="contact-info">
+            <li><strong>Addis Ababa, Ethiopia</strong></li>
+            <li><a href="mailto:info@bridge-et.org">info@bridge-et.org</a></li>
+            <li><a href="tel:+251911234567">+251 911 234 567</a></li>
+          </ul>
+          <div class="newsletter">
+            <h5>Stay Updated</h5>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="view-all">
-        <a href="#" class="btn-secondary">View All Publications →</a>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 - 2026 BRIDGE Research & Innovation. All Rights Reserved.</p>
+        <p>
+          Registered under FDRE Civil Society Organization Proclamation No. 1113/2019
+        </p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
       </div>
     </div>
-  </section>
-
-  <!-- You can add more sections: Partners, Events, etc. -->
-
-  <script src="script.js"></script>
-</body>
-</html>
+  </footer>
