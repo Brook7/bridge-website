@@ -1,236 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRIDGE | Research & Innovation for Democratic Governance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-dark: #001F3F; /* Deep Navy */
-            --accent-blue: #0056b3;
-            --text-gray: #444;
-            --light-bg: #f4f7f9;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--light-bg);
-            color: var(--text-gray);
-            line-height: 1.6;
-        }
-
-        h1, h2, h3, .vision-text {
-            font-family: 'Lora', serif;
-            color: var(--primary-dark);
-        }
-
-        /* Header / Hero Section */
-        header {
-            background: linear-gradient(rgba(0, 31, 63, 0.9), rgba(0, 31, 63, 0.9)), 
-                        url('https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1500&q=80'); /* Professional building background */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        header h1 {
-            color: white;
-            font-size: 3.5rem;
-            margin: 0;
-            letter-spacing: 2px;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 20px auto;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 2px solid #fff;
-            padding-bottom: 10px;
-            display: inline-block;
-        }
-
-        /* Container & Cards */
-        .container {
-            max-width: 1100px;
-            margin: -50px auto 40px;
-            padding: 0 20px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            padding: 40px;
-            margin-bottom: 30px;
-            border-top: 5px solid var(--primary-dark);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-
-        /* Content Styling */
-        .vision-section {
-            background: var(--primary-dark);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .vision-section h2 { color: white; }
-
-        .values-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .value-item {
-            text-align: center;
-            flex: 1;
-            min-width: 200px;
-            padding: 20px;
-        }
-
-        .value-item strong {
-            display: block;
-            font-size: 1.3rem;
-            color: var(--accent-blue);
-            margin-bottom: 5px;
-        }
-
-        .amharic-text {
-            font-family: 'Inter', sans-serif; /* Standard font for Amharic legibility */
-            line-height: 1.8;
-            border-left: 4px solid var(--accent-blue);
-            padding-left: 20px;
-            font-style: italic;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--primary-dark);
-            color: #bdc3c7;
-            padding: 60px 20px;
-            margin-top: 50px;
-        }
-
-        .footer-grid {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-        }
-
-        footer h3 { color: white; margin-bottom: 20px; }
-        
-        .contact-info p {
-            margin: 5px 0;
-            font-size: 0.9rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--accent-blue);
-            color: white;
-            padding: 14px 35px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .btn:hover { background: #003d82; transform: translateY(-2px); }
-
-        @media (max-width: 768px) {
-            .grid, .footer-grid { grid-template-columns: 1fr; }
-            header h1 { font-size: 2.5rem; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRIDGE Research & Innovation - Parliaments. Peace. Policy</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>BRIDGE</h1>
-        <p class="subtitle">Research & Innovation</p>
-        <p>Democratic Governance & Enhanced Peace in the IGAD Region</p>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="your-logo.png" alt="BRIDGE Logo">
+        <div>
+          <span class="logo-text">BRIDGE</span>
+          <span class="tagline">Research & Innovation</span>
+        </div>
+      </div>
 
+      <ul class="nav-menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li class="dropdown">
+          <a href="#">About <span class="arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Partners</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Parliamentary Research <span class="arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Ethiopian Parliament Monitoring</a></li>
+            <li><a href="#">IGAD Parliaments</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Publications <span class="arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Monthly Digest</a></li>
+            <li><a href="#">Occasional Papers</a></li>
+            <li><a href="#">IGAD Digest</a></li>
+            <li><a href="#">Quarterly Reports</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Training Programs</a></li>
+        <li><a href="#">COP32</a></li>
+        <li><a href="#">News & Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-primary">Subscribe</button>
+        <a href="#" class="lang-switch">አማርኛ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Research and Innovation for<br><span>Democratic Governance</span> and Enhanced Peace</h1>
+      <p class="subtitle">A non-profit think tank and Parliamentary Monitoring Organization specializing in parliamentary affairs and IGAD.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Explore Publications</a>
+        <a href="#" class="btn-secondary">Learn About Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Brief -->
+  <section class="about-brief">
     <div class="container">
-        <div class="card">
-            <h2>Our Profile</h2>
-            <p><strong>Bridge Research and Innovation for Democratic Governance and Enhanced Peace (BRIDGE)</strong> is an independent, non-profit think tank based in Addis Ababa, Ethiopia. Registered under the FDRE Civil Society Organization Proclamation No. 1113/2019, we specialize in parliamentary affairs, peace, and development.</p>
-            
-            <div class="amharic-text">
-                <h3>መልክዓ-ብሪጅ</h3>
-                <p>መቀመጫውን አዲስ አበባ ያደረገ፣ በኢ.ፌ.ዲ.ሪ. የሲቪል ማኅበረሰብ ድርጅቶች ዐዋጅ ቁጥር 1113/2011 መሰረት አገር በቀል የሲቪል ማኅበረሰብ ድርጅት ሆኖ የተመዘገበ የጥናትና ምርምር ተቋም ነው።</p>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="card">
-                <h2>Vision</h2>
-                <p>To be a leading research hub and trusted source of analysis on parliamentary affairs, peace, governance, and development in the IGAD region.</p>
-                <hr>
-                <h2>Core Values</h2>
-                <ul style="padding-left: 20px;">
-                    <li><strong>Rigor:</strong> High-quality, evidence-driven research.</li>
-                    <li><strong>Innovation:</strong> Adaptive solutions for governance and peace.</li>
-                    <li><strong>Trust:</strong> Transparent and reliable analysis.</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>Key Objectives</h2>
-                <p>We aim to strengthen legislative institutions through:</p>
-                <ul style="padding-left: 20px;">
-                    <li>Evidence-based research.</li>
-                    <li>Capacity-building for parliamentarians.</li>
-                    <li>Monitoring parliamentary accountability.</li>
-                </ul>
-                <a href="mailto:research@bridge-et.org" class="btn">Collaborate With Us</a>
-            </div>
-        </div>
+      <div class="about-box">
+        <p>We are a non-profit think tank and Parliamentary Monitoring Organization specializing in parliamentary affairs and the sub-regional organization of the Intergovernmental Authority on Development (IGAD). Established in December 2024 in Addis Ababa, Ethiopia.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="vision-section">
-        <div class="container" style="margin-top: 0;">
-            <h2>Ethio-IGAD Regional Focus</h2>
-            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">"Pioneering creative and adaptive solutions for governance and peace challenges across East Africa."</p>
+  <!-- Latest Posts / Publications Section (New) -->
+  <section class="latest-posts">
+    <div class="container">
+      <h2>Latest Publications & Digests</h2>
+      <div class="posts-grid">
+        <!-- Repeat this card structure for your latest items -->
+        <div class="post-card">
+          <div class="card-image">
+            <img src="digest-image.jpg" alt="Monthly Digest">
+          </div>
+          <div class="card-content">
+            <span class="category">Monthly Digest • English</span>
+            <h3>Monthly Digest Vol.2 No. 014 – March/April 2026</h3>
+            <p>Responsibilities of the Ethiopian House of Peoples’ Representatives...</p>
+            <a href="#" class="read-more">Read →</a>
+          </div>
         </div>
+
+        <!-- Add more cards here (Amharic, Occasional Papers, IGAD Digest, etc.) -->
+      </div>
+      <div class="view-all">
+        <a href="#" class="btn-secondary">View All Publications →</a>
+      </div>
     </div>
+  </section>
 
-    <footer>
-        <div class="footer-grid">
-            <div class="contact-info">
-                <h3>Contact BRIDGE</h3>
-                <p>📍 Kazanchis, SA Building, 9th Floor, Office No. 5</p>
-                <p>Across the main gate of UNECA, Addis Ababa, Ethiopia</p>
-                <p>📞 +251 115 57 74 96 | +251 911 86 12 34</p>
-                <p>📧 research@bridge-et.org</p>
-            </div>
-            <div>
-                <h3>Connect</h3>
-                <p>Post Box: 150096</p>
-                <p>Official Portal: <a href="https://bridge-et.org" style="color: white;">bridge-et.org</a></p>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; font-size: 0.8rem;">
-            &copy; 2026 BRIDGE Research & Innovation. All Rights Reserved.
-        </div>
-    </footer>
+  <!-- You can add more sections: Partners, Events, etc. -->
 
+  <script src="script.js"></script>
 </body>
 </html>
